@@ -1,0 +1,48 @@
+Sensor de regrigeración de servidores
+
+Características
+
+Sensor de temperatura y humedad
+Boton 1: Manual. Activa la refrigeración al ser presionado
+Boton 2: Alta demanda.
+Boton 3: Sobre carha de fucionamiento.
+
+Led1: Refrigeración Manual.
+Led2: Refrigeración automática.
+
+Que se encienda la refrigeración manual cada que se presione se active la refrigeración manual.
+
+La Refrigeración manual tiene prioridad a la automática, excluir las condiciones que activan la 
+refrigeración automática.
+
+Si la temperatura es alta, activar refrigeración automática.
+
+Si tengo alta demanda o sobrecarga, activo la refrigeración automática.
+
+Si tengo, ya sea alta deman o sobre carga de funcionamiento y además temperatura alta, se activará
+la refrigeración manual y automática.
+
+DHT   B1    B2    B3 	|L1    L2
+0	0	0	0	|0 	 0
+0	0	0	1	|0	 1
+0	0	1	0	|0	 1
+0	0	1	1	|0	 1
+0	1	0	0	|1	 0
+0	1	0	1	|1	 0
+0	1	1	0	|1	 0
+0	1	1	1	|1	 0
+1	0	0	0	|0	 1
+1	0	0	1	|1	 1
+1	0	1	0	|1	 1
+1	0	1	1	|1	 1
+1	1	0	0	|1	 0
+1	1	0	1	|1	 1
+1	1	1	0	|1	 1
+1	1	1	1	|1	 1
+
+*DHT = DHT11
+*B1 = BOTON1
+*B2 = BOTON2
+*B3 = BOTON3
+*L1 = LED1 (Manual)
+*L2 = LED2 (Automático)
